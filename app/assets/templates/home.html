@@ -1,0 +1,15 @@
+<h1> Todo List </h1>
+
+<form ng-submit="addTodo()">
+  Title:  <input type="text" ng-model="newTodo.title"><br>
+  Description: <input type="text" ng-model="newTodo.description"><br>
+  <input type="submit" value="Add">
+</form>
+
+<ul>
+  <li ng-repeat="todo in todos">
+    Title: {{todo.title}} <br>
+    Description: {{todo.description}}
+    <a href="#" ng-click="deleteTodo(todo.id)">Delete</a>
+  </li>
+</ul>
