@@ -39,6 +39,11 @@ gem 'angular-rails-templates'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'factory_girl_rails'
+  gem 'launchy'
 end
 
 group :development do
